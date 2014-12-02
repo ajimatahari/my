@@ -20,7 +20,7 @@ Class UserLogins extends CFormModel{
         
         public function authenticate($attribute,$params){
             //validator untuk password
-            if(!$this->hasErrors())
+                if(!$this->hasErrors())
 		{
 			$this->identitas = new UserIdentity($this->user,$this->password);
 			if(!$this->identitas->authenticate())
